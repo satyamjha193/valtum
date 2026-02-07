@@ -133,12 +133,12 @@ const About = () => {
                 {
                   name: "Satyam Jha",
                   role: "Co-Founder & Director",
-                  desc: "With deep expertise in elevator engineering and project management, Satyam leads Valtum's technical operations and innovation strategy.",
+                  // desc: "With deep expertise in elevator engineering and project management, Satyam leads Valtum's technical operations and innovation strategy.",
                 },
                 {
                   name: "Sramanth Kumar",
                   role: "Co-Founder & Director",
-                  desc: "Sramanth brings strong business acumen and a vision for growth, driving Valtum's expansion and client relationships across India.",
+                  // desc: "Sramanth brings strong business acumen and a vision for growth, driving Valtum's expansion and client relationships across India.",
                 },
               ].map((founder, i) => (
                 <AnimatedSection key={founder.name} delay={i * 0.15}>
@@ -156,7 +156,7 @@ const About = () => {
                       {founder.role}
                     </p>
                     <p className="text-muted-foreground text-sm leading-relaxed mt-4">
-                      {founder.desc}
+                      {/* {founder.desc} */}
                     </p>
                   </motion.div>
                 </AnimatedSection>

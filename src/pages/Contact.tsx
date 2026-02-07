@@ -168,8 +168,26 @@ const Contact = () => {
                       {
                         icon: Phone,
                         label: "Call Us",
-                        value: "+91 98765 43210",
-                        href: "tel:+919876543210",
+                        value: (
+                          <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:gap-3">
+                            <a
+                              href="tel:+916301408385"
+                              className="text-foreground transition-colors duration-200 hover:text-[#33A3FF]"
+                            >
+                              +91 63014 08385
+                            </a>
+
+                            <span className="hidden sm:inline text-muted-foreground">|</span>
+
+                            <a
+                              href="tel:+917013688536"
+                              className="text-foreground transition-colors duration-200 hover:text-[#33A3FF]"
+                            >
+                              +91 70136 88536
+                            </a>
+                          </div>
+                        ),
+                        href: null,
                       },
                       {
                         icon: Mail,
@@ -215,7 +233,7 @@ const Contact = () => {
                   {/* Map placeholder */}
                   <div className="rounded-lg overflow-hidden border border-border h-64">
                     <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243647.25176871547!2d78.24323195!3d17.4123487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                      src="https://www.google.com/maps?q=LB+Nagar,+Hyderabad+500074&output=embed"
                       width="100%"
                       height="100%"
                       style={{ border: 0 }}

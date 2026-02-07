@@ -60,7 +60,7 @@ const Projects = () => {
                 Portfolio
               </span>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold tracking-tight max-w-3xl">
-                Our <span className="text-gradient">Projects</span>
+                Our <span className="text-gradient"> Modern Elevators are operated in</span>
               </h1>
               <p className="mt-6 text-lg text-muted-foreground max-w-2xl leading-relaxed">
                 A showcase of our engineering excellence across commercial,

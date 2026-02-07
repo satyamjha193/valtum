@@ -22,7 +22,7 @@ const Footer = () => {
               Quick Links
             </h4>
             <ul className="space-y-3">
-              {["Home", "About", "Services", "Projects", "Contact"].map(
+              {["Home", "About", "Services", "Our Presence", "Contact"].map(
                 (item) => (
                   <li key={item}>
                     <Link
@@ -64,7 +64,7 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-muted-foreground text-sm">
                 <Phone size={16} className="text-primary mt-0.5 shrink-0" />
-                <span>+91 98765 43210</span>
+                <span>+91 6301408385 , +91 7013688536</span>
               </li>
               <li className="flex items-start gap-3 text-muted-foreground text-sm">
                 <Mail size={16} className="text-primary mt-0.5 shrink-0" />
@@ -72,7 +72,7 @@ const Footer = () => {
               </li>
               <li className="flex items-start gap-3 text-muted-foreground text-sm">
                 <MapPin size={16} className="text-primary mt-0.5 shrink-0" />
-                <span>Hyderabad, India</span>
+                <span>Hyderabad, India , LB Nagar , 500074</span>
               </li>
             </ul>
           </div>

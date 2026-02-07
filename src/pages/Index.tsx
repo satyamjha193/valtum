@@ -3,7 +3,6 @@ import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import AboutPreview from "@/components/AboutPreview";
 import ServicesPreview from "@/components/ServicesPreview";
-import StatsSection from "@/components/StatsSection";
 import CTABanner from "@/components/CTABanner";
 
 const Index = () => {
@@ -14,7 +13,6 @@ const Index = () => {
         <HeroSection />
         <AboutPreview />
         <ServicesPreview />
-        <StatsSection />
         <CTABanner />
       </main>
       <Footer />
