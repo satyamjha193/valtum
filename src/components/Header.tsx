@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/valtum-logo.jpeg";
+import logo from "@/assets/favicon.png";
 
 const navLinks = [
   { name: "Home", path: "/" },
@@ -10,6 +10,7 @@ const navLinks = [
   { name: "Services", path: "/services" },
   { name: "Our Presence", path: "/our-presence" },
   { name: "Contact", path: "/contact" },
+  { name: "Products", path: "/products" },
 ];
 
 const Header = () => {
@@ -43,7 +44,7 @@ const Header = () => {
           <img
             src={logo}
             alt="Valtum Lifts"
-            className="h-10 w-auto object-contain"
+            className="h-16 w-auto object-contain"
           />
         </Link>
 
