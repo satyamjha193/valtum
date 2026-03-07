@@ -5,6 +5,7 @@ import AnimatedSection from "@/components/AnimatedSection";
 import { motion } from "framer-motion";
 import { Phone, Mail, MapPin, Send } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const { toast } = useToast();

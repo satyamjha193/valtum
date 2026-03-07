@@ -26,39 +26,20 @@ const AboutPreview = () => {
               About Valtum
             </span>
             <h2 className="text-3xl md:text-4xl font-heading font-bold tracking-tight">
-              Engineering Excellence in{" "}
-              <span className="text-gradient">Vertical Mobility</span>
+              Engineering <span className="text-gradient">Vertical Mobility</span>
             </h2>
             <p className="mt-6 text-muted-foreground leading-relaxed">
-              Valtum Lifts is a premier elevator solutions company founded by
-              Satyam Jha and Sramanth Kumar. We specialize in designing,
-              manufacturing, installing, and maintaining state-of-the-art
-              elevator systems for commercial, residential, and industrial
-              projects.
+              Valtum Lifts is a modern elevator solutions company driven by engineering expertise and a clear commitment to safe vertical mobility. Founded and led by professionals with a strong technical foundation, Valtum brings together practical industry knowledge and forward-thinking design to serve the growing infrastructure needs of today’s buildings.
             </p>
             <p className="mt-4 text-muted-foreground leading-relaxed">
-              Our commitment to safety, innovation, and customer satisfaction has
-              made us a trusted partner for builders, architects, and facility
-              managers across the region.
+              From concept to commissioning, we specialize in the design, manufacturing, installation, and maintenance of elevators across residential, commercial, industrial, and healthcare spaces.
             </p>
-            <div className="mt-8 grid grid-cols-2 gap-6">
-              {[
-                { label: "Safety First", desc: "ISO compliant systems" },
-                { label: "Innovation", desc: "Latest technology" },
-                { label: "Reliability", desc: "24/7 support team" },
-                { label: "Quality", desc: "Premium materials" },
-              ].map((item) => (
-                <div key={item.label} className="flex items-start gap-3">
-                  <div className="w-2 h-2 rounded-full bg-primary mt-2 shrink-0" />
-                  <div>
-                    <p className="font-heading font-semibold text-sm">
-                      {item.label}
-                    </p>
-                    <p className="text-muted-foreground text-xs">{item.desc}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
+            <p className="mt-4 text-muted-foreground leading-relaxed">
+              Our strength lies in combining technical precision with real-world understanding of how vertical transport impacts everyday life. Backed by a dedicated team of engineers and project specialists, we focus on delivering systems that are reliable, efficient, and built to perform over the long term.
+            </p>
+            <p className="mt-4 text-muted-foreground leading-relaxed">
+              With a deep emphasis on safety standards, operational durability, and client-specific solutions, Valtum Lifts continues to evolve as a trusted partner for builders, architects, and facility owners seeking dependable mobility solutions.
+            </p>
           </AnimatedSection>
         </div>
       </div>
