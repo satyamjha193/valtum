@@ -11,19 +11,48 @@ const Contact = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: "",
-    email: "",
     phone: "",
+    email: "",
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for contacting Valtum. We'll get back to you soon.",
+const handleSubmit = (e: React.FormEvent) => {
+  e.preventDefault();
+
+  emailjs
+    .send(
+      import.meta.env.VITE_EMAIL_SERVICE,
+      import.meta.env.VITE_EMAIL_TEMPLATE,
+      {
+        name: formData.name,
+        phone: formData.phone,
+        email: formData.email,
+        message: formData.message,
+      },
+      import.meta.env.VITE_EMAIL_PUBLIC
+    )
+    .then(() => {
+      toast({
+        title: "Message Sent!",
+        description:
+          "Thank you for contacting Valtum. We'll get back to you soon.",
+      });
+
+      setFormData({
+        name: "",
+        phone: "",
+        email: "",
+        message: "",
+      });
+    })
+    .catch((error) => {
+      console.error("EmailJS error:", error);
+      toast({
+        title: "Error",
+        description: "Something went wrong. Please try again.",
+      });
     });
-    setFormData({ name: "", email: "", phone: "", message: "" });
-  };
+};
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
